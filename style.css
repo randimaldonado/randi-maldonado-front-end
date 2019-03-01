@@ -17,6 +17,7 @@ html body {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  line-height: 2;
 }
 #hero-conteudo {
   color: #fff;
@@ -52,13 +53,52 @@ html body {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  line-height: 2;
 }
 #sobre-conteudo {
-  padding: 4rem 5rem;
+  padding: 1rem 10rem;
 }
 #sobre-conteudo h2 {
   color: #ff6400;
+  text-align: center;
 }
 #sobre-conteudo p {
   color: #fff;
+  text-align: justify;
+}
+#habilidades-conteudo {
+  padding: 3rem 0rem;
+  text-align: center;
+}
+#habilidades-conteudo h2 {
+  color: #ff6400;
+}
+#habilidades-icones {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.habilidade {
+  padding: 2rem 2rem;
+  margin: 1rem 5rem;
+}
+.habilidade p {
+  margin-bottom: 1rem;
+}
+.habilidade > i {
+  font-size: 3rem;
+}
+.habilidade .estrelas {
+  color: #FFCC00;
+}
+@media screen and (max-width: 1024px) {
+  #sobre-conteudo {
+    padding: 1rem 5rem;
+  }
+  .habilidade {
+    padding: 1rem 2rem;
+  }
 }
