@@ -6,16 +6,30 @@ html body{font-family:'Open Sans',sans-serif;}
 .flex-center{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;}
 
 // ESTILIZANDO O HERO
-#container-hero{background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(imagens/coluna-foto.jpg);background-size:cover;background-position:center center;background-repeat:no-repeat;background-attachment:fixed;line-height:2;}
-#hero-conteudo{color:#fff;
-	h5{color:#FF6400;margin-bottom:1rem;}
+#container-hero {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(imagens/coluna-foto.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	line-height: 2;
+
+
 }
-#icons-hero{display:flex;text-align:center;justify-content:center;
-	a{color:#ff6400;opacity:0.3;transition:0.3s;
-		&:hover{opacity:1;}
+
+#hero-conteudo{	
+	color: #fff;
+	line-height: 1;
+	*{
+		transition: 0s;
 	}
-	i{padding-top:1rem;padding-right:1rem;font-size:2rem;}
-	p{padding-right:1rem;}
+	h5{
+
+		color: #ff6400;
+		margin: 2rem 0rem;
+	}
+	
+
 }
 
 // ESTILIZANDO SOBRE
@@ -45,13 +59,45 @@ html body{font-family:'Open Sans',sans-serif;}
 
 
 // ESTILIZANDO FOOTER
-#footer{background-color:rgba(0,0,0,0.8); text-align:center;p{font-size: 0.8rem; margin-top: 4rem;}}
-#footer-conteudo{padding-top:10rem;display:flex;justify-content:space-around;color:#fff;
-	a{color:#fff;}
-	h5{transition:0.3s;padding-bottom:1rem;border-bottom:1px solid rgba(0,0,0,0);
-		&:hover{color:#ff6400;padding-bottom:2px;border-bottom:1px solid rgba(255,100,0,1);}
+#footer {
+	background-color: rgba(0, 0, 0, 0.8);
+	text-align: center;
+
+	p {
+		color: #fff;
+		font-size: 0.8rem;
+		margin-top: 4rem;
 	}
+
 }
+
+#footer-conteudo {
+	padding-top: 10rem;
+	display: flex;
+	justify-content: center;
+	color: #fff;
+
+	a {
+		color: #fff;
+	}
+
+	h5 {
+		transition: 0.3s;
+		padding-bottom: 1rem;
+		border-bottom: 1px solid rgba(0, 0, 0, 0);
+		margin: 0rem 2rem;
+
+		&:hover {
+			color: #ff6400;
+			padding-bottom: 2px;
+			border-bottom: 1px solid rgba(255, 100, 0, 1);
+		}
+
+	}
+
+}
+
+
 
 // NOTEBOOKS E TABLETS
 @media screen and (max-width:1024px){
