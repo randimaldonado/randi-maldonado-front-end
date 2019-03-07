@@ -1,10 +1,10 @@
+
 html body{font-family:'Open Sans',sans-serif;}
 .wid(@wid:100%){width:@wid;}
 .flex-center(){display:flex;align-items:center;justify-content:center;}
 .bg-img-cover(){background-size:cover;background-position:center center;background-repeat:no-repeat;background-attachment:fixed;}
 .container-interno{padding:2rem 2rem;}
-.par-lh(){p{line-height:1.5;}
-}
+.par-lh(){p{line-height:1.5;}}
 .vh(){min-height:50vh;}
 // ESTILIZANDO O HERO
 #container-hero{background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(imagens/coluna-foto.jpg);.vh;text-align:center;.flex-center;.bg-img-cover;.wid;
@@ -37,4 +37,51 @@ html body{font-family:'Open Sans',sans-serif;}
 	li a{color:#fff;transition:0.3s;border-left:1px solid rgba(255,100,0,0.0);border-right:1px solid rgba(255,100,0,0.0);padding:0rem 1rem;
 		&:hover{color:#ff6400;border-left:1px solid rgba(255,100,0,0.8);border-right:1px solid rgba(255,100,0,0.8);padding:0rem 0.2rem;}
 	}
+}
+
+
+
+
+// Para telas acima de 850px
+@media only screen and (min-width: 850px){
+.container-interno{padding: 5rem 10rem;}
+#container-hero{
+	
+	#titulo{font-size:5rem;margin-bottom:2rem;padding:0rem 2rem;}
+	#subtitulo{color:#ff6400;font-size:2rem;}
+}
+
+#container-sobre{
+	h2{text-align:left;color:#ff6400;font-size:3rem;margin-bottom:2rem;}
+	p{font-size: 1.5rem;}
+}
+
+
+#container-habilidades{text-align:center;min-height: 80vh;
+	h2{font-size:3rem;color:#ff6400;margin-bottom:5rem;}
+}
+#habilidades-icones{.flex-center;text-align:center;flex-wrap:wrap; font-size: 1.5rem;}
+.habilidade{margin:3rem;
+	> i{font-size:5rem;margin-bottom:1rem;}
+	.estrelas{color:#FFCC00;font-size:1rem;margin-top:1rem;}
+}
+
+#container-trabalhos{min-height: 80vh;text-align:center;
+	p{font-size: 1.5rem;}
+	h2{color:#ff6400;font-size:3rem;margin-bottom:5rem;}
+	i{font-size:3rem;margin-top:10rem;}
+}
+
+#footer{background-color:rgba(0,0,0,0.8);color:#fff;
+	#contato{display: flex; justify-content: center; align-items: center;}
+	p{font-size:1rem;margin-top:3rem;}
+	li{padding:1rem;}
+	li a{font-size: 2rem;color:#fff;transition:0.3s;border:none;border-bottom:1px solid rgba(255,100,0,0.0);padding:1rem 0rem;
+		&:hover{color:#ff6400;border:none;border-bottom:1px solid rgba(255,100,0,0.8);padding:0.2rem 0rem;}
+	}
+}
+
+
+
+
 }
