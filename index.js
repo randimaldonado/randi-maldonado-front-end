@@ -1,13 +1,14 @@
 
 
-new TypeIt('#txt')
+new TypeIt('#titulo')
 .type('')
 .exec(async () => {
   await new Promise((resolve, reject) => {
     setTimeout(() => {
       return resolve();
-    }, 1500)
+    }, 2000)
   });
 })
-.type('Randi Maldonado')
+.type('RANDI MALDONADO')
 .go();
+
