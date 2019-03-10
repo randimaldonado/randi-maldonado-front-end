@@ -84,11 +84,48 @@ html body {
 #container-trabalhos h2 {
   color: #ff6400;
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
 }
 #container-trabalhos i {
   font-size: 2rem;
   margin-top: 5rem;
+}
+#container-portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container-portfolio a {
+  color: #fff;
+  text-shadow: 2px 2px 2px #4c4c4c;
+}
+#portfolio001 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  height: 150px;
+  background-color: #000;
+  background-image: url(imagens/portfolio001.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 110%;
+}
+#portfolio001:hover p {
+  opacity: 1;
+}
+#portfolio001 p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: 0.3s;
+  opacity: 0;
+  font-size: 1.5rem;
+  padding: 0.5rem;
 }
 #footer {
   background-color: rgba(0, 0, 0, 0.8);
@@ -176,11 +213,45 @@ html body {
   #container-trabalhos h2 {
     color: #ff6400;
     font-size: 3rem;
-    margin-bottom: 5rem;
+    margin-bottom: 0rem;
   }
-  #container-trabalhos i {
+  #container-portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #container-portfolio a {
+    color: #fff;
+    text-shadow: 2px 2px 2px #4c4c4c;
+  }
+  #portfolio001 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    height: 300px;
+    background-color: #000;
+    background-image: url(imagens/portfolio001.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
+  }
+  #portfolio001:hover p {
+    opacity: 1;
+  }
+  #portfolio001 p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 94%;
+    width: 94%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+    opacity: 0;
     font-size: 3rem;
-    margin-top: 10rem;
+    line-height: 1.5;
+    padding: 0.5rem;
   }
   #footer {
     background-color: rgba(0, 0, 0, 0.8);
